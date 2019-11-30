@@ -5,12 +5,12 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class examiner {
 	String name;
-	String personid;
-	String gender;
-	String balance;
+	String personid;//体检人id
+	String gender;//性别
+	String balance;//余额
 	String password;
-	String item;
-	String cardid;
+	String item;//体检项目
+	String cardid;//体检卡号
 	public String getName() {
 		return name;
 	}

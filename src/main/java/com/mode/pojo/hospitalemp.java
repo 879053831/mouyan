@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 public class hospitalemp {
 	String username;
 	String password;
-	String power;
+	String power;//权限
 	
 	public hospitalemp() {
 		super();
