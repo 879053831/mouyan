@@ -48,10 +48,10 @@
                         <a class="page-scroll" href="single.html">关于我们</a>
                     </li>
 					<li>
-                        <a class="page-scroll" href="service.html">服务</a>
+                        <a class="page-scroll" href="index/service">服务</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/asd">登录</a>
+                        <a class="page-scroll" href="index/log">登录</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="contact.html">Contacts</a>
