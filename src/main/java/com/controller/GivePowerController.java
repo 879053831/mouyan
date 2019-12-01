@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.serviceDao.PowerServiceDao;
 
 @Controller
-@RequestMapping("power")
+@RequestMapping("/power")
 public class GivePowerController {
 	
 	//@Autowired
