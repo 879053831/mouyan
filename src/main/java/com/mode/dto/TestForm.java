@@ -1,4 +1,4 @@
-package com.mode.pojo;
+package com.mode.dto;
 
 public class TestForm {
 
