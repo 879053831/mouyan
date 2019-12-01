@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 public class team {
 	String name;
 	String password;
-	String bill;
+	String bill;//企业账单 也就是记账
 	public String getName() {
 		return name;
 	}
