@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.PowerMapper">
+
+	<insert id="givePower">
+        insert into t_power values(null,#{mainMealId},#{charetId})  
+	</insert>
+
+
+	<resultMap type="com.model.po.TBPower" id="powers" >
+		<id property="key" column="power_id"/>
+		<association property="value" javaType="com.model.po.TBPower">
+			<id property="powerId" column="power_id"/>
+			<result property="mainMealId" column="main_meal_id" />
+			<result property="charetId" column="charet_id" />
+   		</association>
+
+	</resultMap>
+	<select id="findAllPower" parameterType="java.util.HashMap" resultMap="powers">
+		select * from t_power
+	</select>
+
+
+	
+
+</mapper>

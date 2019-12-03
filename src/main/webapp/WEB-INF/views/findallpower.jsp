@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
 <%@ include file="../../../seting/header.jsp"%>
 <!DOCTYPE html>
 <html>
@@ -9,17 +8,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>
-	<c:if test="${formMag != null }">
-		<c:if test="${formMag.name != null }">
-			name:${formMag.name }
-			<br>
-		</c:if>
-		
-	</c:if>
-	<c:if test="${formMag == null }">
-		null>>>>>>
-	</c:if>
-	</h1>
+<c:if test="${powerMap!=null }">
+${powerMap.size }
+<c:forEach items="${powerMap }" var="item">
+
+powerId:${item.value.powerId }
+
+</c:forEach>
+</c:if>
 </body>
 </html>

@@ -18,12 +18,17 @@
 	<!-- Custom Theme files -->
 	<link href="${baseUrl}/style/css/style.css" rel="stylesheet" type="text/css">
 	
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="${baseUrl}/style/js/jquery.min.js"></script>
 	
 	<!-- Owl Carousel Assets -->
     <link href="${baseUrl}/style/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="${baseUrl}/style/owl-carousel/owl.theme.css" rel="stylesheet">
+	
+	
 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="${baseUrl}/style/js/jquery.min.js"></script>
+	<script src="${baseUrl}/style/js/bootstrap.min.js"></script>
+	
+	
 </head>
 <body>

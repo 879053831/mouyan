@@ -11,9 +11,6 @@
 	<form action="./showform" method="post">
 		Name<input name="name">
 		<br>
-		Age<input name="sex" type="number">
-		<br>
-		Email<input name="age" type="email">
 		<br>
 		<button type="submit">提交</button>
 	</form>

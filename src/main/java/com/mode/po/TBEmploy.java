@@ -58,4 +58,11 @@ public class TBEmploy extends TBWorkUnit {
 		this.empState = empState;
 	}
 
+	@Override
+	public String toString() {
+		return "TBEmploy [empId=" + empId + ", empUsername=" + empUsername + ", mepPassword=" + mepPassword
+				+ ", empJob=" + empJob + ", empState=" + empState + "]";
+	}
+
+	
 }

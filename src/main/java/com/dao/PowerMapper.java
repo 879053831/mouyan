@@ -1,9 +1,11 @@
-package com.serviceDao;
+package com.dao;
 
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.stereotype.Service;
+import org.apache.ibatis.annotations.Param;
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.stereotype.Repository;
 
 import com.mode.po.TBCharet;
 import com.mode.po.TBEmploy;
@@ -14,24 +16,25 @@ import com.mode.po.TBPower;
 import com.mode.po.TBProject;
 import com.mode.po.TBWorkUnit;
 
-@Service
-public interface PowerServiceDao {
+@Repository
+public interface PowerMapper {
 
 	/**
-	 * 给角色分配权限
+	 * 给某个角色分配权限
 	 * @param charetId:角色ID
 	 * @param powerId:权限ID
-	 * @return 分配权限成功与否
+	 * @return 分配成功与否
+	 * @author yaoman
 	 */
-	public boolean givePower(Integer charetId, Integer powerId);
+	public Integer givePower(@Param("mainMealId")Integer mainMealId, @Param("charetId")Integer charetId);
 	
 	/**
-	 * 查找全部权限
-	 * @return
+	 * 查找全部权限，即每个角色所对应的菜单
+	 * @return 
+	 * @author yaoman
 	 */
 	public Map<Integer,TBPower> findAllPower();
-	
-	
+
 	/**
 	 * 禁用账号或开启账号
 	 * @param empId
@@ -185,7 +188,7 @@ public interface PowerServiceDao {
 	 * @return
 	 */
 	public Boolean deleteMeal(Integer mealId);
-
+	
 	/**
 	 * 查询所有员工信息
 	 * @return
@@ -197,6 +200,7 @@ public interface PowerServiceDao {
 	 * @return
 	 */
 	public List<TBWorkUnit> findAllUnit();
+
 
 	/**
 	 * 查询所有菜单
@@ -227,5 +231,5 @@ public interface PowerServiceDao {
 	 * @return
 	 */
 	public List<TBMeal> findAllMeal();
-
+	
 }
